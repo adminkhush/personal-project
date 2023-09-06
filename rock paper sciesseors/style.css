@@ -1,0 +1,50 @@
+body{
+    background-color: #e0dbdb;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+   margin: 0;
+   padding: 0;
+
+}
+h1{
+    font-size: 2rem;
+margin-top: 20px;
+text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 22px;
+    padding: 0 2rem;
+
+
+}
+#rock{
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(236, 86, 86);
+}
+#paper{
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(42, 139, 224);
+}
+#scissors{
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(204, 231, 31);
+}
+#user-score{
+    color: blue;
+}
+#computer-score{
+    color: rgb(12, 221, 236);
+}

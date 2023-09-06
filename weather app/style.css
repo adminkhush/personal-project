@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f1f1f1;
+}
+.container{
+background-color: white;
+text-align: center;
+max-width: 600px;
+margin: 0 auto;
+margin-top: 40px;
+border-radius: 10px;
+box-shadow: 20px 20px 10px 10px gray;
+border: none;
+}
+h1{
+margin: 40px;
+padding: 10px;
+font-size: 44px;
+font-weight: bold;
+
+}
+form{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+form input[type="text"]{
+border: none;
+outline: none;
+padding: 10px;
+font-size: 18px;
+width: 60%;
+
+
+}
+input[type="submit"]{
+border: none;
+outline: none;
+border-radius: 5px;
+font-size: 18px;
+background-color: rgb(86, 78, 177);
+color: white; 
+cursor: pointer;
+padding: 8px 10px;
+transition: background-color .3s ease;
+}
+input[type="submit"]:hover{
+background-color: rgb(43, 31, 181);
+
+}
+.icon img{
+width: 100px;
+height: 100px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+}
+.temprature{
+font-size: 48px;
+font-weight: bold;
+}
+.discription{
+font-size: 28px;
+margin-bottom: 20px;
+}
+.details{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.details>div{
+margin: 10px;
+padding: 20px;
+background-color: #f1f1f1;
+flex: 1;
+border-radius: 5px;
+text-align: center;
+min-height: 45px;
+}
+@media (max-width:786px) {
+form{
+flex-direction: column;
+}
+form input[type="text"]{
+width: 100%;
+
+}
+.details>div{
+width: 100%;
+}
+}
