@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note app</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right , lightgreen,lightblue);
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       font-size: 18px;
+    }
+.app{
+    display: grid;
+  display: grid;
+grid-template-columns: repeat(auto-fill,300px);
+gap: 40px;
+justify-content: center;
+padding: 50px;
+}
+.note{
+    margin: 10px;
+    background-color: rgb(169, 241, 169);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    font-size: 18px;
+    outline: none;
+    
+}
+.note:hover{
+    background-color:rgb(156, 247, 156);
+    transition: all 300ms ease;
+
+}
+.btn{
+    height: 200px;
+    border-color: rgba(255, 255, 255, 0.27);
+    border-radius: 15px;
+font-size: 70px;
+font-weight: 700;
+color: rgba(0, 0, 0, .3);
+
+}
+.btn:hover{
+    border-color: rgba(255, 255, 255, 0.55);
+    color: rgba(0, 0, 0, .6);
+    transition: all 300ms ease;
+
+}
+    </style>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+<script src="index.js"></script>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery-3.7.0.js"></script>
+    <script src="jquery-ui.js"></script>
+</head>
+<body>
+    <h1 class="heading">Note App</h1>
+    <p class="info-text">Double click on a note to remove it</p>
+<div class="app" >
+   
+    <textarea  class="note" id="note" cols="30" rows="10" placeholder="Empty Note"></textarea>
+   <button  class="btn" id="btn">+</button>
+
+</div>
+
+</body>
+</html>

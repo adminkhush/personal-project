@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(132deg,orange,purple,red);
+}
+.menu{
+    background-color: lightgray;
+opacity: .3;
+margin: 10px;
+width: 300px;
+padding:  5px;
+align-items: center;
+display: flex;
+border-radius: 10px;
+justify-content: space-between;
+}
+.social-list{
+    background-color: lightgray;
+opacity: .3;
+margin: 10px;
+width: 300px;
+padding: 5px ;
+border-radius: 10px;
+}
+.social-list li{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 5px;
+    transition: background-color .2s;
+
+}
+.social-list li:hover{
+    background-color: darkgray;
+}
+p{
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+.rotate .fa-solid{
+    transform: rotate(180deg);
+}
+ .hide{
+    visibility: hidden;
+}
+.menu .fa-solid{
+transition: transform .2s;
+}

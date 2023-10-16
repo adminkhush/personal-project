@@ -1,0 +1,25 @@
+body{
+    font-size: 22px;
+background: linear-gradient(to bottom,lightblue,lightgreen,aqua);
+align-items: center;
+justify-content: center;
+display: flex;
+}
+h1{
+    font-style: italic;
+    text-transform:capitalize;
+}
+textarea{
+    width: 350px;
+    height: 100px;
+}
+.counter-character {
+display: flex;
+justify-content: space-around;
+}
+.total-counter{
+    color: blue;
+}
+.remaining-counter{
+    color: red;
+}

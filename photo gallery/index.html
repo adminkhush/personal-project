@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(to bottom,rgb(176, 247, 176),lightblue);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+        }
+        .container{
+background-color: #fff;
+width: 80%;
+margin: 0 auto;
+border-radius: 5px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+        }
+        input{
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        .btn{
+width: 20%;
+margin: 10px;
+background-color: rgb(35, 34, 34);
+color: #fff;
+padding: 10px 20px;
+font-size: 18px;
+cursor: pointer;
+transition: background-color .3s ease;
+        }
+.btn:hover{
+    background-color: black;
+}
+        #image{
+            width: 400px;
+height: 250px;
+margin: 10px;
+object-fit: cover;
+border-radius: 5px;
+
+}
+        #errormessage{
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+        .gallery{
+            display: none;
+
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>Photo Gallery</h1>
+    <input type="number" name="number" id="number" value="2" max="10" min="1">
+    <small id="errormessage">Error messsage</small>
+
+    <button class="btn"> Get Photo</button>
+    <div class="gallery" id="gallery">
+    <img id="image" src="https://images.unsplash.com/photo-1682685796014-2f342188a635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="image">
+  <img  src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80" alt="" id="image">
+<img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="" id="image">
+</div>
+</div> 
+</body>
+</html>

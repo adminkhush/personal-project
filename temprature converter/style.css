@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(to right, rgb(212, 237, 246),rgb(194, 249, 194));
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+justify-content: center;
+align-items: center;
+}
+.container{
+    margin:0 auto;
+
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(212, 237, 246),rgb(194, 249, 194));
+    border-radius: 20px;
+    border: 2px;
+    box-shadow: 30px 37px 10px 10px gray;
+    box-sizing: border-box;
+max-width: 600px;
+margin-top: 40px;
+
+}
+h1{
+    font-size: 33px;
+    text-align: center;
+    font-weight: bold;
+}
+label{
+    margin: 2px 5px;
+    
+}
+input{
+    
+    margin-bottom: 10px;
+    width: 100%;
+}

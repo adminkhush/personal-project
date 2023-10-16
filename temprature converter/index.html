@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temprature converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Temprature converter</h1>
+        <label for="celsius">celsius:</label>
+        <input type="number" id="celsius"           onchange="computeTemp(event)"
+        placeholder="Enter temprature" class="input" name="celsius">
+        <label for="fahrenheit">fahrenheit:</label>
+        <input type="number" id="fahrenheit"           onchange="computeTemp(event)"
+        placeholder="Enter temprature" class="input" name="fahrenheit">
+        <label for="kelvin">Kelvin:</label>
+        <input type="number" id="kelvin"           onchange="computeTemp(event)"
+        placeholder="Enter temprature" class="input" name="kelvin">
+    
+    </div>
+    <script>
+      const celsiusEl = document.getElementById("celsius");
+const fahrenheitEl = document.getElementById("fahrenheit");
+const kelvinEl = document.getElementById("kelvin");
+
+function computeTemp(event) {
+  const currentValue = +event.target.value;
+
+  switch (event.target.name) {
+    case "celsius":
+      kelvinEl.value = (currentValue + 273.32).toFixed(2);
+      fahrenheitEl.value = (currentValue * 1.8 + 32).toFixed(2);
+      break;
+    case "fahrenheit":
+      celsiusEl.value = ((currentValue - 32) / 1.8).toFixed(2);
+      kelvinEl.value = ((currentValue - 32) / 1.8 + 273.32).toFixed(2);
+      break;
+    case "kelvin":
+      celsiusEl.value = (currentValue - 273.32).toFixed(2);
+      fahrenheitEl.value = ((currentValue - 273.32) * 1.8 + 32).toFixed(2);
+      break;
+    default:
+      break;
+  }
+}
+    </script>
+</body>
+</html>
